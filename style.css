@@ -3,10 +3,38 @@ body {
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 80px 20px;
+  background: url('https://images.unsplash.com/photo-1609710228159-5dc4378e30ad') no-repeat center center/cover;
 }
 
 h1 {
   font-size: 3em;
   color: #FFDC00;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 2em;
+  color: #FFDC00;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #FFDC00;
+  color: #001f3f;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
