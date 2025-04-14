@@ -1,42 +1,34 @@
-<!DOCTYPE html>
-<html lang="da">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blue Star Academy</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
+import Image from 'next/image';
+import './globals.css'; // eller './home.css' hvis du lavede en separat fil
 
-  <!-- Header with Logo and Navigation -->
-  <header class="header">
-    <div class="logo-container">
-      <img src="logo.png" alt="Blue Star Academy Logo" class="logo">
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#news">Nyheder</a></li>
-        <li><a href="#who-we-are">Hvem Vi Er</a></li>
-        <li><a href="#academy">Vores Academies</a></li>
-        <li><a href="#about">Om Os</a></li>
-        <li><a href="#contact">Kontakt Os</a></li>
-        <li><a href="#partners">Partner</a></li>
-      </ul>
-    </nav>
-  </header>
+export default function Home() {
+  return (
+    <>
+      {/* Header */}
+      <header className="header">
+        <img src="/logo.png" alt="Bluestar Logo" className="logo" />
+        <nav className="nav">
+          <ul>
+            <li><a href="#">Om os</a></li>
+            <li><a href="#">Projekter</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
 
-  <!-- Hero Section with Image -->
-  <section class="hero">
-    <img src="bn.jpg" alt="Hero Image" class="hero-image">
-    <div class="hero-overlay">
-      <h1>Blue Star Academy</h1>
-      <p>Vi udvikler unge talenter gennem fodbold, karakter og fællesskab</p>
-      <a href="#about" class="cta-button">Læs Mere</a>
-    </div>
-  </section>
-
-  <!-- Du kan nu tilføje flere sektioner nedenfor -->
-
-</body>
-</html>
+      {/* Hero */}
+      <section className="hero">
+        <img
+          src="/hero-image.jpg"
+          alt="Hero billede"
+          className="hero-image"
+        />
+        <div className="hero-overlay">
+          <h1>Velkommen til Bluestar</h1>
+          <p>Inspiration. Uddannelse. Udvikling.</p>
+          <a href="#" className="cta-button">Lær mere</a>
+        </div>
+      </section>
+    </>
+  );
+}
