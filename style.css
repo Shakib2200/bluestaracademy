@@ -46,9 +46,9 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('486143810_627302570265705_401803253738577143_n.jpg') center/cover no-repeat;
-  position: relative;
+  background: url('hero.jpg') center/cover no-repeat;
   height: 80vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,37 +67,4 @@ nav ul li a:hover {
   position: relative;
   z-index: 1;
   color: #ffffff;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-}
-
-/* About Section */
-.about {
-  padding: 60px 20px;
-  background-color: #001845;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #4da8da;
-}
-
-/* Footer */
-footer {
-  background-color: #001233;
-  padding: 20px;
-  text-align: center;
-  color: #ccc;
-  font-size: 0.9rem;
-}
+  max-width:
