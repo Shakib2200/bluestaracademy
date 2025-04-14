@@ -1,20 +1,22 @@
+/* Reset */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  background-color: #f8f9fa;
-  color: #111827;
+  background-color: #f4f6f8;
+  color: #1a1a1a;
 }
 
+/* Hero */
 .hero {
   position: relative;
+  background: url('bn.jpg') no-repeat center center/cover;
   height: 100vh;
-  background: url("bn.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,66 +24,115 @@ body {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 32, 64, 0.6);
   padding: 2rem;
-  border-radius: 1rem;
-  color: white;
+  border-radius: 12px;
+  color: #ffffff;
   max-width: 800px;
 }
 
-.overlay h1 {
-  font-size: 3rem;
-  font-weight: 800;
+.logo {
+  width: 100px;
+  height: auto;
   margin-bottom: 1rem;
 }
 
-.overlay p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .cta-button {
-  background-color: #1e3a8a;
+  background-color: #004080;
   color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
   text-decoration: none;
-  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: inline-block;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #3b82f6;
+  background-color: #0066cc;
 }
 
+/* Academy Section */
+.academy-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.academy-item {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.academy-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+.academy-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.academy-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Section */
 .section {
   padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
   text-align: center;
+  background-color: white;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #1e3a8a;
+  color: #004080;
 }
 
 .section p {
   font-size: 1.1rem;
+  color: #333;
 }
 
-/* Responsivt */
+/* Media Queries */
 @media (max-width: 768px) {
-  .overlay h1 {
+  h1 {
     font-size: 2rem;
   }
 
-  .overlay p {
-    font-size: 1rem;
+  .hero {
+    height: auto;
+    padding: 4rem 2rem;
   }
 
-  .cta-button {
-    padding: 0.5rem 1.25rem;
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .academy-container {
+    flex-direction: column;
   }
 }
