@@ -1,7 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #111827;
+}
+
 .hero {
   position: relative;
   height: 100vh;
-  background: url('bn.jpg') no-repeat center center/cover;
+  background: url("bn.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,33 +22,66 @@
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* mørk overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 1rem;
   color: white;
+  max-width: 800px;
 }
 
 .overlay h1 {
   font-size: 3rem;
+  font-weight: 800;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 5px black;
 }
 
 .overlay p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .cta-button {
-  background-color: #1e3a8a; /* mørkeblå */
+  background-color: #1e3a8a;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #3b82f6; /* lysere blå */
+  background-color: #3b82f6;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+.section p {
+  font-size: 1.1rem;
+}
+
+/* Responsivt */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1.25rem;
+  }
 }
