@@ -1,70 +1,41 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #0a1128; /* Meget mørk blå */
-  color: #ffffff;
-  line-height: 1.6;
-}
-
-/* Header/Nav */
-header {
-  background-color: #001f54;
-  padding: 20px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav .logo img {
-  height: 60px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #4da8da;
-}
-
-/* Hero Section */
 .hero {
-  background: url('hero.jpg') center/cover no-repeat;
-  height: 80vh;
   position: relative;
+  height: 100vh;
+  background: url('bn.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(10, 17, 40, 0.7); /* Mørkeblå overlay */
-  z-index: 0;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* mørk overlay */
+  padding: 2rem;
+  border-radius: 1rem;
+  color: white;
 }
 
-.hero-text {
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-  max-width:
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #1e3a8a; /* mørkeblå */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3b82f6; /* lysere blå */
+}
