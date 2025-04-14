@@ -12,6 +12,23 @@ body {
   color: #1a1a1a;
 }
 
+/* Header Section */
+.header {
+  padding: 1rem 2rem;
+  background-color: #004080;
+  text-align: center;
+}
+
+.logo-container {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -30,12 +47,6 @@ body {
   color: #ffffff;
   max-width: 900px;
   text-align: center;
-}
-
-.logo {
-  width: 150px;
-  height: auto;
-  margin-bottom: 1rem;
 }
 
 h1 {
