@@ -29,6 +29,7 @@ body {
   border-radius: 12px;
   color: #ffffff;
   max-width: 900px;
+  text-align: center;
 }
 
 .logo {
@@ -81,6 +82,33 @@ p {
   margin: 0 auto;
 }
 
+/* Academy Section */
+.academy-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.academy {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.academy h3 {
+  font-size: 1.75rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.academy p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
 /* Footer Section */
 .footer {
   text-align: center;
@@ -102,6 +130,16 @@ p {
 
   .section {
     padding: 2rem 1rem;
+  }
+
+  .academy-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academy {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   .logo {
