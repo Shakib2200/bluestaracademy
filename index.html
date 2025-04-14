@@ -1,32 +1,27 @@
-import Image from 'next/image';
-import './globals.css'; // eller './home.css' hvis du lavede en separat fil
+import './globals.css'; // Sørg for at importere dine styles
 
 export default function Home() {
   return (
     <>
       {/* Header */}
       <header className="header">
-        <img src="/logo.png" alt="Bluestar Logo" className="logo" />
+        <img src="/logo.png" alt="Bluestar logo" className="logo" />
         <nav className="nav">
           <ul>
             <li><a href="#">Om os</a></li>
-            <li><a href="#">Projekter</a></li>
+            <li><a href="#">Hold</a></li>
             <li><a href="#">Kontakt</a></li>
           </ul>
         </nav>
       </header>
 
-      {/* Hero */}
+      {/* Hero Section */}
       <section className="hero">
-        <img
-          src="/hero-image.jpg"
-          alt="Hero billede"
-          className="hero-image"
-        />
+        <img src="/hero.jpg" alt="Hero billede" />
         <div className="hero-overlay">
-          <h1>Velkommen til Bluestar</h1>
-          <p>Inspiration. Uddannelse. Udvikling.</p>
-          <a href="#" className="cta-button">Lær mere</a>
+          <h1>Velkommen til Bluestar Academy</h1>
+          <p>Drøm stort. Træn hårdt. Lev din drøm.</p>
+          <a href="#" className="cta-button">Bliv en del af holdet</a>
         </div>
       </section>
     </>
