@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  line-height: 1.6;
   background-color: #ffffff;
   color: #1a1a1a;
 }
@@ -17,12 +16,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #004080;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .logo-container {
-  max-width: 150px;
+  max-width: 180px;
 }
 
 .logo {
@@ -33,7 +37,7 @@ body {
 .nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .nav ul li {
@@ -42,9 +46,9 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -61,6 +65,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 80px; /* Space for the fixed header */
 }
 
 .overlay {
