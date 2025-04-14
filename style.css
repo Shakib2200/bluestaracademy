@@ -1,12 +1,21 @@
+/* === GENERELT === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
 /* === HEADER === */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: transparent;
   position: sticky;
   top: 0;
+  background: transparent;
   z-index: 1000;
 }
 
@@ -26,14 +35,13 @@
   text-decoration: none;
   color: white;
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 
 .nav a:hover {
   color: #ffcc00;
 }
 
-/* === HERO SECTION === */
+/* === HERO === */
 .hero {
   position: relative;
   width: 100%;
@@ -45,7 +53,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .hero-overlay {
@@ -55,7 +62,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 10px;
 }
@@ -64,9 +71,9 @@
   background-color: #ffcc00;
   color: black;
   padding: 12px 24px;
-  font-weight: 600;
-  text-decoration: none;
+  font-weight: bold;
   border-radius: 5px;
   margin-top: 15px;
+  text-decoration: none;
   display: inline-block;
 }
