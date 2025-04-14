@@ -20,9 +20,9 @@ header {
   color: #fff;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+.logo img {
+  height: 60px;
+  width: auto;
 }
 
 nav ul {
@@ -42,7 +42,7 @@ nav ul li a:hover {
 }
 
 .hero {
-  background: url('https://www.righttodream.com/assets/images/home/hero.jpg') center/cover no-repeat;
+  background: url('486143810_627302570265705_401803253738577143_n.jpg') center/cover no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
