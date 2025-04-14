@@ -1,4 +1,4 @@
-/* Header style */
+/* === HEADER STYLE === */
 .header {
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@
   font-weight: 600;
 }
 
-/* Hero */
+/* === HERO SECTION === */
 .hero {
   position: relative;
   width: 100%;
