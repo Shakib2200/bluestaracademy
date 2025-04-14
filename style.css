@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 800;
 }
 
 .logo-container {
@@ -60,7 +60,7 @@ body {
 .hero {
   position: relative;
   background: url('bn.jpg') no-repeat center center/cover;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
